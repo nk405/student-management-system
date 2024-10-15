@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Student Record Management System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="bg">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top py-4">
+    <div class="container">
+      <h1 class="navbar-brand">Student Record Management System</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grades.html">Grades</a>
+          </li>
+          <li>
+            <a class="btn btn-outline-light" href="../index.html" role="button">Log Out <i class="fa-solid fa-right-from-bracket"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page content -->
+  <div>
+    <h1 id="pgTitle">Courses</h1>
+  </div>
+  <div class="row d-flex justify-content-center p-4">
+    <div class="card w-25 m-4">
+      <div class="card-body">
+        <h2 class="d-flex justify-content-center">Foundation</h2>
+        <h2 class="d-flex justify-content-center"><i class="fa-solid fa-book"></i></h2>
+        <ul>
+          <li>Introduction to fundamental principles and concepts of software engineering.</li>
+          <li>Focus on building a strong foundation in programming and software development methodologies.</li>
+          <li>Covers essential programming languages like Java and Python.</li>
+          <li>Hands-on experience in developing basic software applications.</li>
+          <li>Preparatory course for further studies or entry-level positions in software engineering.</li>
+        </ul>
+    </div>
+    </div>
+    <div class="card w-25 m-4">
+      <div class="card-body">
+      <h2 class="d-flex justify-content-center">HND</h2>
+      <h2 class="d-flex justify-content-center"><i class="fa-solid fa-award"></i></h2>
+      <ul>
+        <li>Comprehensive two-year program for in-depth study of software engineering.</li>
+        <li>Builds upon foundational knowledge with advanced programming languages, software architecture, and database management.</li>
+        <li>Emphasizes real-world applications, projects, and practical skills.</li>
+        <li>Enables graduates to work as software engineers or software developers.</li>
+        <li>Pathway for further studies in the field.</li>
+      </ul>
+    </div>
+    </div>
+    <div class="card w-25 m-4">
+      <div class="card-body">      
+      <h2 class="d-flex justify-content-center">Degree</h2>
+      <h2 class="d-flex justify-content-center"><i class="fa-solid fa-graduation-cap"></i></h2>
+      <ul>
+        <li>Rigorous and in-depth program spanning three to four years.</li>
+        <li>Covers software development, system analysis, project management, and quality assurance.</li>
+        <li>Advanced study of programming languages, software design principles, algorithms, and data structures.
+        </li>
+        <li>Emphasis on practical experience through internships or industry projects.</li>
+        <li>Prepares graduates for leadership roles in the software engineering industry or advanced studies.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <footer class="py-4 mt-4">
+    <div class="container text-center">
+      <p>&copy; 2023 Student Record Management System. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Add Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Add your JavaScript code to fetch and populate data -->
+  <script src="courses.js"></script>
+</body>
+
+</html>

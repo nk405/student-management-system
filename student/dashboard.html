@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Student Record Management System</title>
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <div class="bg">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top py-4">
+    <div class="container">
+      <h1 class="navbar-brand">Student Record Management System</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grades.html">Grades</a>
+          </li>
+          <li>
+            <a class="btn btn-outline-light" href="../index.html" role="button">Log Out <i class="fa-solid fa-right-from-bracket"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="dashboard" class="container mt-4">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-auto">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">Students <i class="fa-solid fa-users"></i> </h2>
+              <p id="totalStudents" class="card-text">Loading...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">Courses <i class="fa-solid fa-graduation-cap"></i></h2>
+              <p id="totalCourses" class="card-text">Loading...</p>
+            </div>
+          </div>
+        </div>
+
+      <div class="card m-4">
+        <div class="card-body">
+          <h2 class="card-title">Recent Activity <i class="fa-solid fa-chart-line"></i></h2>
+          <ul id="recentActivityList" class="list-group">
+            <li class="list-group-item">Loading...</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card m-4">
+        <div class="card-body">
+          <h2 class="card-title">Notifications <i class="fa-solid fa-bell"></i></h2>
+          <ul id="notificationsList" class="list-group">
+            <li class="list-group-item">Loading...</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      
+    </section>
+  </main>
+
+  <footer class="py-4 mt-4">
+    <div class="container text-center">
+      <p>&copy; 2023 Student Record Management System. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetchDashboardData();
+    });
+  </script>
+</body>
+</html>

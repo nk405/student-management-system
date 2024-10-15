@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Student Record Management System</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="bg">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top py-4">
+    <div class="container">
+      <h1 class="navbar-brand">Student Record Management System</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="students.html">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grades.html">Grades</a>
+          </li>
+          <li>
+            <a class="btn btn-outline-light" href="../index.html" role="button">Log Out <i class="fa-solid fa-right-from-bracket"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page content -->
+
+
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                  alt="Sample photo" class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase">Student registration form</h3>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="firstName" class="form-control form-control-lg" />
+                        <label class="form-label" for="firstName">First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="lastName" class="form-control form-control-lg" />
+                        <label class="form-label" for="lastName">Last name</label>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="guardianName" class="form-control form-control-lg" />
+                        <label class="form-label" for="guardianName">Guardian's name</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="city" class="form-control form-control-lg" />
+                    <label class="form-label" for="nearCity">Nearest City</label>
+
+                </div>
+
+                  <div class="mb-4">
+                    <p class="mb-1">Course</p>
+                  <select class="select p-2 w-auto">
+                    <option value="1">Select</option>
+                    <option value="2">Foundation</option>
+                    <option value="3">HND</option>
+                    <option value="4">Degree</option>
+                  </select>
+
+                </div>
+
+                <div class="mb-4">
+                  <p class="mb-1">Subjects</p>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="1" checked>
+                  <label class="form-check-label" for="check1">ETF</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="2">
+                  <label class="form-check-label" for="check2">DBMS</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="3">
+                  <label class="form-check-label" for="check2">OOP</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="4">
+                  <label class="form-check-label" for="check2">SE</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="5">
+                  <label class="form-check-label" for="check2">IP</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="6">
+                  <label class="form-check-label" for="check2">WAD</label>
+                </div>
+                </div>
+  
+                  <div class="form-outline mb-4">
+                    <input type="text" id="email" class="form-control form-control-lg" />
+                    <label class="form-label" for="email">Email ID</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="password" class="form-control form-control-lg" />
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+  
+                  <div class="d-flex justify-content-end pt-3">
+                    <button id="btnReset" type="reset" class="btn btn-light btn-lg mr-2">Reset all</button>
+                    <button id="btnSubmit" type="submit" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+
+  <footer class="py-4 mt-4">
+    <div class="container text-center">
+      <p>&copy; 2023 Student Record Management System. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="students.js"></script>
+</body>
+
+</html>

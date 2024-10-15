@@ -1,0 +1,59 @@
+
+body {
+  background-color: #008374;
+}
+
+nav{
+  background-color: #00534a;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer{
+  background-color: rgb(70, 70, 70);
+}
+
+.bg {
+
+  background-image: url("https://cdn.wallpapersafari.com/62/90/owk8QH.jpg");
+
+  
+  height: 100%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  
+}
+
+.card-registration .select-input.form-control{
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+  .card-registration .select-arrow {
+  top: 13px;
+  }
+
+
+#btnBack{
+  width: 60px;
+  height: 60px;
+  border-color: #00534900;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 35px;
+  background-color: #00699e;
+}
